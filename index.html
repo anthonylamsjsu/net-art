@@ -3,12 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anthony Lam — Net Art</title>
+  <meta
+    name="description"
+    content="DEPARTURE — an interactive artwork about letting go."
+  >
+  <title>DEPARTURE</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <main>
-    <h1>My net art project is taking shape.</h1>
-    <p>This is the beginning.</p>
+    <h1>DEPARTURE</h1>
+
+    <p>Some things need somewhere to go.</p>
+    <p>What are you ready to leave behind?</p>
+
+    <form id="departure-form">
+      <label for="confession">Your departure</label>
+
+      <textarea
+        id="confession"
+        name="confession"
+        placeholder="Leave your words here..."
+        maxlength="500"
+        rows="6"
+        aria-describedby="privacy-note"
+        autocomplete="off"
+        required
+      ></textarea>
+
+      <p id="privacy-note">
+        Not saved. Not shared. Just departed.
+      </p>
+
+      <button type="submit">Release</button>
+    </form>
   </main>
+
+  <div id="departure-animation" aria-hidden="true"></div><div id="departure-animation" aria-hidden="true"></div>
+<script src="./script.js"></script>
 </body>
 </html>
