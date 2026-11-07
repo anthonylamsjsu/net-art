@@ -357,3 +357,33 @@ img {
     transition: none;
   }
 }
+/* Four-point holographic stars */
+.departure-star {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(
+    135deg,
+    #c5f8ff,
+    #e2c4ff,
+    #ffbddf,
+    #fff2bd,
+    #b9ffe3
+  );
+  clip-path: polygon(
+    50% 0%,
+    62% 38%,
+    100% 50%,
+    62% 62%,
+    50% 100%,
+    38% 62%,
+    0% 50%,
+    38% 38%
+  );
+  filter: drop-shadow(0 0 6px #c5f8ff);
+}
+
+/* Allow touch nudges during the release. */
+body.is-departing {
+  overflow: hidden;
+  touch-action: none;
+}
